@@ -1,0 +1,24 @@
+{
+  "projectDir": "../my-project",
+  "phasesDir": "./phases",
+  "coder": {
+    "command": "opencode",
+    "model": "provider/coder-model",
+    "agent": ""
+  },
+  "auditor": {
+    "command": "opencode",
+    "model": "provider/auditor-model",
+    "agent": "plan"
+  },
+  "controller": {
+    "baseUrl": "https://api.openai.com/v1",
+    "model": "your-controller-model",
+    "apiKeyEnv": "CONTROLLER_API_KEY"
+  },
+  "checkCommands": ["npm test", "npm run build"],
+  "maxAttempts": 3,
+  "timeoutMinutes": 30,
+  "autoCommit": true,
+  "maxChars": 30000
+}

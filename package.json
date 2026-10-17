@@ -1,0 +1,16 @@
+{
+  "name": "si-control-center",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Small phase-by-phase coding automation: coder -> checks -> auditor -> controller AI -> human approval.",
+  "scripts": {
+    "start": "tsx src/orchestrator.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
